@@ -6,6 +6,44 @@ This workshop focuses on the scientific principles and tools of genomic analysis
 
 [Timetable](https://github.com/WCSCourses/ClinicalGenomeASIA-HGA23/blob/main/modules/HGA2023%20Timetable%20and%20Planner%20-%20Timetable%20draft.pdf)
 
+## Workshop requirements:
+1. Laptop with at least 4 GB RAM.
+2. Install IGV from [software.broadinstitute.org].
+3. Spreadsheet program (Excel, Sheets, etc.).
+4. Set laptop to use "." as decimal separator and "," as thousand separator.
+5. Up-to-date web browser (Chrome or Firefox, not Internet Explorer).
+6. Optional: External mouse & iPad.
+For RNA-seq workshop:
+1. Install R from [cran.r-project.org].
+2. Install R Studio from [posit.co/download/rstudio-desktop].
+3. In R or R Studio, install these packages:
+   - Rsubread
+   - limma
+   - edgeR
+   - DESeq2
+   - GEOquery
+   - enrichr
+   - fgsea
+4. Execute the following commands line by line:
+   ```
+   install.packages("BiocManager")
+   BiocManager::install("Rsubread")
+   BiocManager::install("limma")
+   BiocManager::install("edgeR")
+   BiocManager::install("DESeq2")
+   BiocManager::install("GEOquery")
+   BiocManager::install("enrichr")
+   BiocManager::install("fgsea")
+   ```
+5. Install additional packages for efficient code usage:
+   ```
+   BiocManager::install("tidyr")
+   BiocManager::install("magrittr")
+   ```
+6. Type "a" for every update during package installation.
+
+
+
 ## Workshop overview
 In collaboration with the 14th Asia Pacific Conference on Human Genetics (APCHG), the 68th Annual Meeting of the Japan Society of Human Genetics (JSHG), and the 22nd meeting of the East Asia Union of Human Genetics Society (EAUHGS), hosted in Tokyo, Japan, we are delighted to offer this free-to-attend, 2-day workshop on the application of genome sequence technologies for clinical applications
 
