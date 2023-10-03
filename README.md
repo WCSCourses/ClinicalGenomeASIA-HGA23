@@ -4,7 +4,7 @@
 ## ClinicalGenomeASIA-HGA23
 This workshop focuses on the scientific principles and tools of genomic analysis and interpretation that underpin clinical research and practice
 
-
+[Timetable](https://github.com/WCSCourses/ClinicalGenomeASIA-HGA23/blob/main/modules/HGA2023%20Timetable%20and%20Planner%20-%20Timetable%20draft.pdf)
 
 ## Workshop overview
 In collaboration with the 14th Asia Pacific Conference on Human Genetics (APCHG), the 68th Annual Meeting of the Japan Society of Human Genetics (JSHG), and the 22nd meeting of the East Asia Union of Human Genetics Society (EAUHGS), hosted in Tokyo, Japan, we are delighted to offer this free-to-attend, 2-day workshop on the application of genome sequence technologies for clinical applications
