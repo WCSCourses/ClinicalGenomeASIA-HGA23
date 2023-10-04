@@ -46,11 +46,11 @@ For RNA-seq workshop:
 
 ## Materials for Practicals 
 
--[Sequence analysis workflow]() 
--[RNAseq]()
--[Variant interpretation WES cases + CNVs]()
--[Variant curation & ACMG guidelines]() 
--[DECIPHER]()
+- [Sequence analysis workflow]() 
+- [RNAseq]()
+- [Variant interpretation WES cases + CNVs]()
+- [Variant curation & ACMG guidelines]() 
+- [DECIPHER]()
 
 
 ## Workshop Overview
