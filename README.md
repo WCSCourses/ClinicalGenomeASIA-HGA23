@@ -47,7 +47,7 @@ For RNA-seq workshop:
 ## Materials for Practicals 
 
 - [Sequence analysis workflow]() 
-- [RNAseq]()
+- [RNAseq](https://github.com/WCSCourses/ClinicalGenomeASIA-HGA23/tree/main/workshop_data/Material(RNA-seq%20workshop))
 - [Variant interpretation WES cases + CNVs]()
 - [Variant curation & ACMG guidelines]() 
 - [DECIPHER]()
