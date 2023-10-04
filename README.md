@@ -44,7 +44,16 @@ For RNA-seq workshop:
 
 
 
-## Workshop overview
+## Materials for Practicals 
+
+-[Sequence analysis workflow]() 
+-[RNAseq]()
+-[Variant interpretation WES cases + CNVs]()
+-[Variant curation & ACMG guidelines]() 
+-[DECIPHER]()
+
+
+## Workshop Overview
 In collaboration with the 14th Asia Pacific Conference on Human Genetics (APCHG), the 68th Annual Meeting of the Japan Society of Human Genetics (JSHG), and the 22nd meeting of the East Asia Union of Human Genetics Society (EAUHGS), hosted in Tokyo, Japan, we are delighted to offer this free-to-attend, 2-day workshop on the application of genome sequence technologies for clinical applications
 
 
