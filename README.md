@@ -13,7 +13,7 @@ This workshop focuses on the scientific principles and tools of genomic analysis
 - [RNAseq](https://github.com/WCSCourses/ClinicalGenomeASIA-HGA23/tree/main/workshop_data/Material(RNA-seq%20workshop))
 - [Variant interpretation WES cases + CNVs](https://github.com/WCSCourses/ClinicalGenomeASIA-HGA23/blob/main/modules/VariantInterp/2.Exome_variant_interpretation_SNVs_CNVs.docx.pdf)
 - [Variant curation & ACMG guidelines](https://github.com/WCSCourses/ClinicalGenomeASIA-HGA23/tree/main/modules/VariantCurationACMG) 
-- [DECIPHER](https://github.com/WCSCourses/ClinicalGenomeASIA-HGA23/blob/main/modules/DECIPHER/DECIPHER_workshop_HGA_Oct_2023.pdf)
+- [DECIPHER](https://github.com/WCSCourses/ClinicalGenomeASIA-HGA23/blob/main/modules/DECIPHER/DECIPHER_workshop_HGA_Oct_2023_v1.1.pdf)
 
 
 ## Workshop requirements:
