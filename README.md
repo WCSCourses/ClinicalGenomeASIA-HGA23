@@ -4,8 +4,7 @@
 ## ClinicalGenomeASIA-HGA23
 This workshop focuses on the scientific principles and tools of genomic analysis and interpretation that underpin clinical research and practice
 
-[Timetable](https://github.com/WCSCourses/ClinicalGenomeASIA-HGA23/blob/main/modules/HGA2023%20Timetable%20and%20Planner%20-%20Timetable%20draft.pdf)
-
+[Timetable](https://github.com/WCSCourses/ClinicalGenomeASIA-HGA23/blob/main/modules/HGA2023%20Timetable%20and%20Planner%20-%20Timetable%20draft-2.pdf)
 
 ## Materials for Practicals 
 
