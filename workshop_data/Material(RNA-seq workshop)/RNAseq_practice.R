@@ -21,28 +21,27 @@ BD = read.delim(fnames, header=TRUE, sep="\t")
 head(BD)
 colnames(BD)
 
-#Downloading meta data
+
+#Downloading meta data using "getGEO" function
 gse = getGEO("GSE80336",GSEMatrix=TRUE,AnnotGPL=TRUE) 
 gse = gse[[1]] #Try 'gse' in the command line to see what are in it.
+gse
 
-#Extracting feature (gene) description data. No feature data for GSE80336.
-#fset = fData(gse) 
-#colnames(fset) #Find "Symbol", "Gene Symbol" or "Gene symbol"
-#ID = fset$'Gene Symbol' #Double quotation also works
-#rownames(eset) = ID #Each row of eset is named with 'gene symbols'
 
 #Extracting phenotype data
 pset = pData(gse) 
 colnames(pset) #See what are included
 pset$title
 age=as.numeric(pset$`age (years):ch1`)
+age
 sex=pset$`Sex:ch1`
+sex
 
 
 ## DE analysis of RNA-seq data using limma
-
-library(edgeR)
 library(limma)
+library(edgeR)
+
 #Take only expression values and gene symbols from the matrix
 BD1=BD[,5:40]
 rownames(BD1)=BD$GeneSymbol # Only the numbers are data
@@ -68,9 +67,10 @@ dim(voom.data$E)
 #Selecting the pair of conditions to compare. The first term is the "test" condition.
 contrast.matrix = makeContrasts(conditionBD-conditionC, levels=design)
 
-fit = lmFit(voom.data, design = design) # Performing differential expression analysis
+# Model fitting & differential expression analysis
+fit = lmFit(voom.data, design = design) 
 fit = contrasts.fit(fit,contrast.matrix) 
-fit = eBayes(fit)
+fit = eBayes(fit) #moderated t-test
 
 #Taking results
 voom.pvalues = fit$p.value
@@ -84,7 +84,7 @@ head(voom.result.table)
 
 lfc = voom.result.table$logFC
 names(lfc)=rownames(voom.result.table)
-write.table(lfc,"lfc.txt", sep="\t") # Input data for preranked GSEA
+write.table(lfc,"lfc.rnk", sep="\t", col.names = F) # Input data for preranked GSEA
 
 DE_index=which(voom.result.table$adjpvalue<0.25) #
 length(DE_index)
@@ -98,6 +98,8 @@ cpmLogFC=log2(aa[,2]/aa[,1]) #a rough calculation of log2FC
 
 
 ### DESeq2 analysis
+##DESeq2 is usually more sensitive than limma
+
 library(DESeq2)
 
 control=grep('C',colnames(BD1)) #sample indexes for each condition
@@ -131,6 +133,7 @@ head(DESeq2.results) #Shows which conditions were compared
 #filter out genes with NA p values
 DESeq2.results=DESeq2.results[-which(is.na(DESeq2.results$padj)==TRUE),]
 head(DESeq2.results)
+head(voom.result.table)
 
 DE_index2=which(DESeq2.results$padj<0.1)
 length(DE_index2)
@@ -140,7 +143,7 @@ write.table(DEG,"DEG.txt", row.names = F, col.names = F, quote = F) #Writing onl
 
 lfc2 = DESeq2.results$log2FoldChange
 names(lfc2)=rownames(DESeq2.results)
-write.table(lfc2,"lfc2.txt", sep="\t") # Input data for preranked GSEA
+write.table(lfc2,"lfc2.rnk", sep="\t", col.names = F) # Input data for preranked GSEA
 
 
 

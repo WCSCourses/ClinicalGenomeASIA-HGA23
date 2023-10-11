@@ -9,7 +9,7 @@ listEnrichrDbs() # Available DBs within EnrichR
 db_GO = c("GO_Molecular_Function_2018", "GO_Cellular_Component_2018", "GO_Biological_Process_2018")
 input = DEG
 #input = c("Runx1", "Gfi1", "Gfi1b", "Spi1", "Gata1", "Kdr")
-#input=as.vector(as.list(read.delim("genelist.txt",header=F,sep="\t")))
+input=as.vector(as.list(read.delim("DEG.txt", header=F, sep = "\t"))) #check!!
 
 res = enrichr(input, db_GO)
 res[[1]]
@@ -43,6 +43,7 @@ plotEnrich(res[[2]], showTerms = 20, numChar = 40, y = "Count", orderBy = "P.val
 
 BiocManager::install("fgsea") # Function or pathway enrichment analysis for all genes without using a cutoff
 BiocManager::install("qusage") 
+BiocManager::install("tidyverse") 
 library(fgsea)
 library(qusage)
 library(magrittr)
