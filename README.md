@@ -26,6 +26,7 @@ This workshop focuses on the scientific principles and tools of genomic analysis
 For RNA-seq workshop:
 1. Install R from [cran.r-project.org].
 2. Install R Studio from [posit.co/download/rstudio-desktop].
+
 -For Window10 users, Rtools should be installed before package installation. Rtools can be downloaded from [https://cran.r-project.org/bin/windows/Rtools/].
 -For Mac users, gfrotran should be installed before package installation. gfortran can be downloaded from [https://cran.r-project.org/bin/macosx/tools/].
 
